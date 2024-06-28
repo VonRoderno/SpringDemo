@@ -7,8 +7,8 @@
 <body>
 <h2>Login</h2>
 <form action="login" method="post">
-    Username: <input type="text" name="username"><br>
-    Password: <input type="password" name="password"><br>
+    Username: <input type="text" name="username" required/><br>
+    Password: <input type="password" name="password" required/><br>
     <input type="submit" value="Login">
     <c:if test="${not empty param.error}">
         <p>${param.error}</p>
