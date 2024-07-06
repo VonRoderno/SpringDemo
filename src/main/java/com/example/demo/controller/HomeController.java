@@ -38,7 +38,7 @@ public class HomeController {
         }
     }
 
-    @GetMapping("/logout")
+    @GetMapping("/logout")//try
     public String logout() {
         userSession.setUsername(null);
         return "redirect:/login";
